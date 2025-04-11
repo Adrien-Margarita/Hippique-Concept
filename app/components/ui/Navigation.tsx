@@ -131,6 +131,7 @@ export default function Navigation() {
                 onClick={() => setIsMobileOpen(!isMobileOpen)}
                 aria-label="Toggle Menu"
                 className="gold-text"
+                type='button'
             >
                 {isMobileOpen ? <HiX className="w-8 h-8" /> : <HiMenu className="w-8 h-8" />}
             </button>
