@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --text-color: #293038;
+  --gold: #B3A77F;
+}
+
+body {
+  background: var(--background);
+  color: var(--text-color);
+  font-family: var(--font-montserrat), Arial, Helvetica, sans-serif;
+}
+
+/* Classes utilitaires pour votre couleur dorée */
+.gold-text {
+  color: var(--gold);
+}
+
+.gold-bg {
+  background-color: var(--gold);
+}
+
+.white-bg {
+  background-color: var(--background);
+}
