@@ -14,9 +14,9 @@ export default function Navigation() {
   return (
  <>
 {/* Version Desktop */}
-    <nav className='white-bg hidden md:block w-full'>
+    <nav className='white-bg hidden md:block w-full px-10 sticky top-0 z-50'>
         <div className='font-medium text-sm'>
-            <ul className='flex flex-nowrap gap-3 justify-between items-center w-full px-4 text-sm'>
+            <ul className='flex flex-nowrap gap-3 justify-between items-center w-full px-4 text-base'>
             {/* Réseaux sociaux */}
             <div className="flex min-w-[120px]">
                 <li>
@@ -121,7 +121,7 @@ export default function Navigation() {
     </nav>
 
 {/* Version Mobile */}
-    <nav className='block md:hidden w-full white-bg z-50'>
+    <nav className='block md:hidden w-full white-bg position sticky top-0 z-50 px-3'>
         <div className='flex items-center justify-between'>
             <Link href="/">
                 <img src="/logo.jpg" alt="Logo Solaire Hippique Concept" className='h-30 w-auto'/>
