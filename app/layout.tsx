@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
 import "./styles/globals.css";
 import Header from "./components/ui/Header";
+import Footer from "./components/ui/Footer";
 
 // Police d'écriture du site, accès via --font-montserrat
 const montserrat = Montserrat({
@@ -28,6 +29,7 @@ export default function RootLayout({
         <main>
           {children}
         </main>
+        <Footer />
       </body>
     </html>
   );
