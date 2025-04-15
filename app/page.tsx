@@ -33,14 +33,10 @@ export default function HomePage() {
         </div>
       </section>
     </div>
+    {/* Fond déroulant */}
+    <div className="h-[28rem] w-screen bg-[url('/view3.jpg')] bg-cover bg-center bg-fixed mb-8">
+    </div>
 
-      <div className="h-[22rem] w-screen bg-[url('/view2.jpg')] bg-cover bg-center bg-fixed mb-8">
-      </div>
-
-{/* TODO: A VALIDER */}
-    {/* <div className="h-80">
-      <img src="/abri-de-prairie.webp" alt="abri de prairie" className="w-full h-full object-cover object-center"/>
-    </div>  */}
     <div className="px-10">
       <section className="flex flex-col items-center gap-8 border-2 border-[color:var(--gold)] rounded-xl py-8 px-12">
         <button className="text-white p-3 gold-bg rounded-xl w-[40%] text-lg" type='button'><Link href="/a-propos">Qui sommes-nous ?</Link></button>
@@ -83,7 +79,7 @@ export default function HomePage() {
         </div>
 
         {/* Partie droite */}
-        <div className="w-1/2 gold-bg rounded-tl-xl">
+        <div className="w-1/2 gold-bg rounded-tl-xl rounded-bl-xl">
           <Form />
         </div>
       </section>

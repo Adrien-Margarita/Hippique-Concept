@@ -39,7 +39,7 @@ export default function Form() {
   }
 
   return (
-    <section className="py-12 px-4 text-black">
+    <section className="py-6 px-4 text-black">
       <div className="max-w-2xl mx-auto bg-white/30 backdrop-blur-md rounded-xl p-8 shadow-md">
         <h2 className="text-3xl font-bold text-center mb-8">Étude de faisabilité</h2>
         <form className="space-y-6">
