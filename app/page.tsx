@@ -10,7 +10,7 @@ export default function HomePage() {
           <img src="/mainHome.webp" alt="paysage avec deux Sulky" className="rounded-xl w-full" />
           
           {/* Bloc supperposé */}
-          <div className="absolute sm:top-8 sm:left-8 bottom-0 h-fit bg-black/25 backdrop-blur-md rounded-xl py-2 sm:py-4 px-4 sm:px-8 shadow-md xl:w-1/4 flex flex-col justify-evenly gap-1 sm:gap-3 text-center w-[100%] sm:w-[40%] lg:w-1/2 ">
+          <div className="absolute sm:top-8 sm:left-8 bottom-0 h-fit bg-black/25 backdrop-blur-md rounded-xl py-2 sm:py-4 px-4 sm:px-8 shadow-md xl:w-1/4 flex flex-col justify-evenly gap-1 sm:gap-3 text-center w-[100%] sm:w-[40%] lg:w-1/2 width-3xl">
             <h2 className="text-s sm:text-xl font-bold text-white">Au service de vos besoins</h2>
             <p className="text-white text-xs md:text-lg sm:pt-1">
               Des bâtiments pour des solutions énergétiques qui changent le monde et vous facilitent la vie.
@@ -36,7 +36,7 @@ export default function HomePage() {
       </div>
       
       {/* Fond déroulant - full width */}
-      <div className="h-[10rem] sm:h-[16rem] lg:h-[28rem] w-full bg-[url('/abri-de-prairie.webp')] sm:bg-[url('/view3.jpg')] bg-cover bg-left lg:bg-center sm:bg-fixed mb-4 lg:mb-8">
+      <div className="h-[10rem] sm:h-[16rem] lg:h-[28rem] w-full bg-[url('/abri-de-prairie.webp')] sm:bg-[url('/view3.jpg')] bg-cover bg-left sm:bg-fixed mb-4 lg:mb-8">
       </div>
 
       <div className="w-full max-w-[2400px] px-4 lg:px-10">
@@ -50,7 +50,7 @@ export default function HomePage() {
 
         <section className="mt-4 lg:mt-8 relative grid grid-cols-2 grid-rows-2 gap-4">
           {/* Bloc superposé */}
-          <div className="absolute z-10 bg-black/25 backdrop-blur-md rounded-xl py-4 px-4 lg:px-8 shadow-md h-fit w-3/4 sm:w-1/2 lg:w-1/4 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col justify-evenly gap-1.5 sm:gap-3 text-center text-white">
+          <div className="absolute z-10 bg-black/25 backdrop-blur-md rounded-xl py-4 px-4 lg:px-8 shadow-md h-fit w-3/4 sm:w-1/2 lg:w-1/4 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col justify-evenly gap-1.5 sm:gap-3 text-center text-white gap-3xl">
             <h2 className="text-s md:text-xl font-semibold">Équipements d'écuries</h2>
             <p className="text-xs md:text-base">Gamme d'équipements fabriqués par nos soins. Herses, boxes, barns, cavalettis...</p>
             <button className="text-white p-1.5 md:p-3 gold-bg rounded-xl w-[80%] mx-auto text-xs md:text-lg hover:shadow-lg hover:brightness-110 transition-all duration-300" type='button'>
