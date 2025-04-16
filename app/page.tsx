@@ -15,7 +15,7 @@ export default function HomePage() {
             <p className="text-white text-xs md:text-lg sm:pt-1">
               Des bâtiments pour des solutions énergétiques qui changent le monde et vous facilitent la vie.
             </p>
-            <button className="text-white p-1.5 sm:p-3 gold-bg rounded-xl text-xs md:text-lg" type='button'><Link href="/etude-faisabilite">Demandez une étude</Link></button>
+            <button className="text-white p-1.5 sm:p-3 gold-bg rounded-xl text-xs md:text-lg hover:shadow-lg hover:brightness-110 transition-all duration-300" type='button'><Link href="/etude-faisabilite">Demandez une étude</Link></button>
           </div>
         </div>
         
@@ -25,9 +25,9 @@ export default function HomePage() {
                 Une famille de cavaliers qui s'investit pour les cavaliers
               </h2>
               <p className="lg:text-xl text-base lg:w-3/4 py-4">
-              Après une étude de faisabilité, Solaire Hippique Concept et ses partenaires  investisseurs offrent en intégralité, sur toute la France, la  construction de manèges équestres financés par des panneaux solaires.
+              Après une étude de faisabilité, Solaire Hippique Concept et ses partenaires investisseurs offrent en intégralité, sur toute la France, la construction de manèges équestres financés par des panneaux solaires.
               </p>
-              <button className="text-white p-3 gold-bg rounded-xl w-[80%] sm:w-[40%] text-lg" type='button'><Link href="/etude-faisabilite">En savoir plus</Link></button>
+              <button className="text-white p-3 gold-bg rounded-xl w-[80%] sm:w-[40%] text-lg hover:shadow-lg hover:brightness-110 transition-all duration-300" type='button'><Link href="/etude-faisabilite">En savoir plus</Link></button>
           </div>
           <div className="sm:w-1/2">
             <img className="rounded-xl w-full" src="/batiment-1.jpg" alt="bâtiment équestre" />
@@ -36,16 +36,16 @@ export default function HomePage() {
       </div>
       
       {/* Fond déroulant - full width */}
-      <div className="h-[10rem] sm:h-[16rem] lg:h-[28rem] w-full bg-[url('/abri-de-prairie.webp')] sm:bg-[url('/view3.jpg')] bg-cover bg-center sm:bg-left lg:bg-center sm:bg-fixed mb-4 lg:mb-8">
+      <div className="h-[10rem] sm:h-[16rem] lg:h-[28rem] w-full bg-[url('/abri-de-prairie.webp')] sm:bg-[url('/view3.jpg')] bg-cover bg-left lg:bg-center sm:bg-fixed mb-4 lg:mb-8">
       </div>
 
       <div className="w-full max-w-[2400px] px-4 lg:px-10">
         <section className="flex flex-col items-center gap-8 border-2 border-[color:var(--gold)] rounded-xl sm:py-8 py-6 px-8 sm:px-12">
-          <button className="text-white p-3 gold-bg rounded-xl w-[80%] sm:w-[40%] text-lg" type='button'><Link href="/a-propos">Qui sommes-nous ?</Link></button>
+          <button className="text-white p-3 gold-bg rounded-xl w-[80%] sm:w-[40%] text-lg hover:shadow-lg hover:brightness-110 transition-all duration-300" type='button'><Link href="/a-propos">Qui sommes-nous ?</Link></button>
           <p className="text-base sm:text-xl text-justify">Fort de notre expérience dans l'équitation, nous mettons tout en oeuvre pour vous fournir le meilleur dans vos écuries. Nous sommes une entreprise familiale de construction de bâtiments conçus spécialement pour les activités équestres. 
-          Nous avons travaillé sur de nombreux projets avec pour objectif de proposer  des solutions d'ingénierie innovantes pour des bâtiments adaptés à la  pratique de l'équitation mais également pour du matériel équestre.<br />
+          Nous avons travaillé sur de nombreux projets avec pour objectif de proposer des solutions d'ingénierie innovantes pour des bâtiments adaptés à la pratique de l'équitation mais également pour du matériel équestre.<br />
           La qualité des produits est au fondement de notre entreprise. C'est la  force motrice de toutes les décisions importantes qui régissent notre  entreprise.<br />
-          N'hésitez pas à nous contacter pour en savoir plus, nous serons ravis de pouvoir  vous aider dans la conception et la réalisation de vos structures et manèges équestres.</p>
+          N'hésitez pas à nous contacter pour en savoir plus, nous serons ravis de pouvoir vous aider dans la conception et la réalisation de vos structures et manèges équestres.</p>
         </section>
 
         <section className="mt-4 lg:mt-8 relative grid grid-cols-2 grid-rows-2 gap-4">
@@ -53,7 +53,7 @@ export default function HomePage() {
           <div className="absolute z-10 bg-black/25 backdrop-blur-md rounded-xl py-4 px-4 lg:px-8 shadow-md h-fit w-3/4 sm:w-1/2 lg:w-1/4 left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col justify-evenly gap-1.5 sm:gap-3 text-center text-white">
             <h2 className="text-s md:text-xl font-semibold">Équipements d'écuries</h2>
             <p className="text-xs md:text-base">Gamme d'équipements fabriqués par nos soins. Herses, boxes, barns, cavalettis...</p>
-            <button className="text-white p-1.5 md:p-3 gold-bg rounded-xl w-[80%] mx-auto text-xs md:text-lg" type='button'>
+            <button className="text-white p-1.5 md:p-3 gold-bg rounded-xl w-[80%] mx-auto text-xs md:text-lg hover:shadow-lg hover:brightness-110 transition-all duration-300" type='button'>
               <Link href="/etude-faisabilite">Voir nos différents équipements</Link>
             </button>
           </div>
@@ -83,7 +83,7 @@ export default function HomePage() {
           </div>
 
           {/* Partie droite */}
-          <div className="mt-4 lg:mt-0 lg:w-1/2 gold-bg lg:rounded-tl-xl lg:rounded-bl-xl">
+          <div className="mt-4 lg:mt-0 lg:w-1/2 gold-bg lg:rounded-tl-xl lg:rounded-bl-xl form-rounded-3xl">
             <Form />
           </div>
         </section>
