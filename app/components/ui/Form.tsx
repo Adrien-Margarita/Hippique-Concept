@@ -39,11 +39,11 @@ export default function Form() {
   }
 
   return (
-    <section className="py-6 px-4 text-black">
+    <section className="py-3 sm:py-6 px-3 sm:px-4 text-black">
       <div className="max-w-2xl mx-auto bg-white/30 backdrop-blur-md rounded-xl p-8 shadow-md">
-        <h2 className="text-3xl font-bold text-center mb-8">Étude de faisabilité</h2>
-        <form className="space-y-6">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <h2 className="text-xl sm:text-3xl font-bold text-center mb-4 sm:mb-8">Étude de faisabilité</h2>
+        <form className="space-y-3 sm:space-y-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-6">
             <div>
               <label htmlFor="nom" className="block mb-2 font-semibold">Nom *</label>
               <input
