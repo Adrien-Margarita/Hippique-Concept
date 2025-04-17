@@ -1,16 +1,12 @@
-/** @type {import('tailwindcss').Config} */
-module.exports = {
+export default {
   content: [
-    './app/**/*.{js,ts,jsx,tsx}',
-    './pages/**/*.{js,ts,jsx,tsx}',
-    './components/**/*.{js,ts,jsx,tsx}',
+    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
+    "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}"
   ],
   theme: {
-    extend: {
-      colors: {
-        gold: 'var(--gold)', // Nouvelle couleur pour `text-gold` par ex
-      },
-    },
+    extend: {},
   },
-  plugins: [],
-}
+  darkMode: "class",
+  plugins: []
+};

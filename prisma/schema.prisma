@@ -1,0 +1,61 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model ProductCategory {
+  id        Int       @id @default(autoincrement())
+  name      String
+  imageUrl  String
+  products  Product[]
+}
+
+model Product {
+  id            Int             @id @default(autoincrement())
+  title         String
+  description   String
+  basePrice     Float?          // null si prix sur devis
+  deliveryInfo  String?         // null si devis
+  categoryId    Int
+  category      ProductCategory @relation(fields: [categoryId], references: [id])
+  variants      ProductVariant[]
+}
+
+model ProductVariant {
+  id        Int     @id @default(autoincrement())
+  label     String
+  price     Float
+  productId Int
+  product   Product @relation(fields: [productId], references: [id])
+}
+
+model Prospect {
+  id              Int     @id @default(autoincrement())
+  nom             String
+  prenom          String
+  telephone       String
+  email           String
+  ville           String
+  codePostal      String
+  sectionParcelle String
+  numeroParcelle  String
+  message         String?
+  createdAt       DateTime @default(now())
+}
+
+model NewsletterSubscriber {
+  id           Int      @id @default(autoincrement())
+  email        String   @unique
+  subscribedAt DateTime @default(now())
+}
+
+model adminUser {
+  id       Int    @id @default(autoincrement())
+  email    String @unique
+  password String
+  name     String?
+}
