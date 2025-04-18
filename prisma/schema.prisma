@@ -7,34 +7,37 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model ProductCategory {
-  id        Int       @id @default(autoincrement())
-  name      String
-  imageUrl  String
-  products  Product[]
-}
-
 model Product {
-  id            Int             @id @default(autoincrement())
-  title         String
-  description   String
-  basePrice     Float?          // null si prix sur devis
-  deliveryInfo  String?         // null si devis
-  categoryId    Int
-  category      ProductCategory @relation(fields: [categoryId], references: [id])
-  variants      ProductVariant[]
+  id           Int              @id @default(autoincrement())
+  title        String
+  description  String
+  basePrice    Float?
+  deliveryInfo String?
+  variants     ProductVariant[]
+  images       ProductImage[]
+  createdAt    DateTime         @default(now())
+  updatedAt    DateTime         @updatedAt
+
+  ContactRequest ContactRequest[]
 }
 
 model ProductVariant {
   id        Int     @id @default(autoincrement())
-  label     String
+  label     String  // ex: "Box S", "Pack Premium", "Option X"
   price     Float
   productId Int
   product   Product @relation(fields: [productId], references: [id])
 }
 
+model ProductImage {
+  id        Int     @id @default(autoincrement())
+  url       String
+  productId Int
+  product   Product @relation(fields: [productId], references: [id])
+}
+
 model Prospect {
-  id              Int     @id @default(autoincrement())
+  id              Int      @id @default(autoincrement())
   nom             String
   prenom          String
   telephone       String
@@ -53,9 +56,22 @@ model NewsletterSubscriber {
   subscribedAt DateTime @default(now())
 }
 
-model adminUser {
-  id       Int    @id @default(autoincrement())
-  email    String @unique
+model AdminUser {
+  id       Int     @id @default(autoincrement())
+  email    String  @unique
   password String
   name     String?
+}
+
+model ContactRequest {
+  id         Int      @id @default(autoincrement())
+  nom        String
+  prenom     String
+  email      String
+  telephone  String
+  ville      String
+  codePostal String
+  productId  Int?     // Nullable car parfois ce n'est pas lié à un produit
+  product    Product? @relation(fields: [productId], references: [id])
+  createdAt  DateTime @default(now())
 }

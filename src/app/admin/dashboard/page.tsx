@@ -8,10 +8,10 @@ export default async function AdminDashboard() {
   if (!session) {
     redirect("/admin/login");
   }
-
+  
   return (
     <div className="p-6">
-      <h1 className="text-2xl font-bold">Bienvenue, {session.user?.email}</h1>
+      <h1 className="text-2xl font-bold">Bienvenue, {session.user?.name}</h1>
       <p>Dashboard privé ici.</p>
     </div>
   );
